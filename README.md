@@ -18,7 +18,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Get the Code
 ```
 
-cd <node folder>
+cd <src/app/Node_folder>
 npm i
 ```
 ## Starting Development server
