@@ -2,7 +2,7 @@
 
 ## Get the Code
 ```
-git clone https://github.com/sgardas/angular-frontend.git
+git clone <https://github.com/sgardas/quiz-generator.git>
 cd <cloned folder>
 npm i
 ```
@@ -11,14 +11,14 @@ npm i
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Find the Microserver at https://github.com/sgardas/Node-microserver.git
+
 
 # 2. Running Microserver 
 
 ## Get the Code
 ```
-git clone https://github.com/sgardas/Node-microserver.git
-cd <cloned folder>
+
+cd <node folder>
 npm i
 ```
 ## Starting Development server
