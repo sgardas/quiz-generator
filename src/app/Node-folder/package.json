@@ -1,0 +1,29 @@
+{
+  "name": "micro",
+  "version": "1.0.0",
+  "description": "```\r git clone https://github.com/sgardas/Node-microserver.git\r cd <cloned folder>\r npm i\r ```\r ## Starting Development server\r Open command Line and run `node quiz.js`. You will see server listening to port 8081.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sgardas/Node-microserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sgardas/Node-microserver/issues"
+  },
+  "homepage": "https://github.com/sgardas/Node-microserver#readme"
+}

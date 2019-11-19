@@ -1,0 +1,280 @@
+form{
+  text-align: center;
+  }
+  
+  .tcont{
+  height: 400px;
+  width: 670px;
+  background: #fff ;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  
+  }
+
+  .cont{
+    display: inline-block; 
+    
+    padding-top: 100px;
+  }
+
+  .roundback {
+    text-align: center;
+    background-image: url("../../assets/images/back2.jpg");
+    height: 600px;
+    width:800px;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left:360px;
+  }
+  
+  .container{
+  height: 400px;
+  width: 800px;
+  min-height: 100vh;
+  margin-top:100px;
+  
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  }
+  .form-style-1 {
+  margin:10px auto;
+  max-width: 400px;
+  padding: 20px 12px 10px 20px;
+  font: 13px Lucida Sans Unicode, Lucida Grande, sans-serif;
+  }
+  .form-style-1 li {
+  padding: 0;
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+  }
+  .form-style-1 label{
+  margin:0 0 3px 0;
+  padding:0px;
+  display:block;
+  font-weight: bold;
+  }
+  .form-style-1 input[type=text],
+  .form-style-1 input[type=date],
+  .form-style-1 input[type=datetime],
+  .form-style-1 input[type=number],
+  .form-style-1 input[type=search],
+  .form-style-1 input[type=time],
+  .form-style-1 input[type=url],
+  .form-style-1 input[type=email],
+  textarea,
+  select{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border:1px solid #BEBEBE ;
+  padding: 7px;
+  margin:0px;
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  }
+  .form-style-1 input[type=text]:focus,
+  .form-style-1 input[type=date]:focus,
+  .form-style-1 input[type=datetime]:focus,
+  .form-style-1 input[type=number]:focus,
+  .form-style-1 input[type=search]:focus,
+  .form-style-1 input[type=time]:focus,
+  .form-style-1 input[type=url]:focus,
+  .form-style-1 input[type=email]:focus,
+  .form-style-1 textarea:focus,
+  .form-style-1 select:focus{
+  -moz-box-shadow: 0 0 8px #88D5E9 ;
+  -webkit-box-shadow: 0 0 8px #88D5E9 ;
+  box-shadow: 0 0 8px #88D5E9 ;
+  border: 1px solid #88D5E9 ;
+  }
+  .form-style-1 .field-divided{
+  width: 49%;
+  }
+  
+  .form-style-1 .field-long{
+  width: 100%;
+  }
+  .form-style-1 .field-select{
+  width: 100%;
+  }
+  .form-style-1 .field-textarea{
+  height: 100px;
+  }
+  .form-style-1 input[type=submit], .form-style-1 input[type=button]{
+  background: #4B99AD ;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  color: #fff ;
+  }
+  .form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+  background: #4691A4 ;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  }
+  .form-style-1 .required{
+  color:red;
+  }
+  .btn-btn-primary{
+  background-color:  rgb(7, 77, 23) ;
+  color: white;
+  padding: 5px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: none;
+  border: 1px solid transparent;
+  }
+  .btn-btn-primary span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  }
+  
+  .btn-btn-primary span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  }
+  
+  .btn-btn-primary:hover span {
+  padding-right: 25px;
+  }
+  
+  .btn-btn-primary:hover span:after {
+  opacity: 1;
+  right: 0;
+  }
+
+
+
+  * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0px;
+      font-family: 'segoe ui';
+    }
+  
+    #btn {
+      
+      background-color: #4d4d4d; /* Green */
+      color: white;
+      font-size: 20px;
+      }
+    
+    .nav {
+      height: 50px;
+      width: 100%;
+      background-color: #4d4d4d;
+      position: relative;
+    }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 22px;
+      color: #fff;
+      padding: 10px 10px 10px 10px;
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+    
+    .nav > .nav-links > a {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+    
+    .nav > .nav-links > a:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav > #nav-check {
+      display: none;
+    }
+    
+    @media (max-width:600px) {
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+      
+    }
+    
+    

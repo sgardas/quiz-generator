@@ -1,0 +1,66 @@
+[
+    {
+        "qnum" :"1.",
+        "q": "Which music diva lost both her brother and husband to cancer in 2016?",
+        "opt1": "Taylor Swift",
+        "opt2": "Celine Dion",
+        "opt3": "Mariah Carey",
+        "answer": "Celine Dion"
+    },
+    {
+        "qnum" :"2.",
+        "q": "Michael Jackson's 1982 album Thriller featured a duet with which other legendary artist?",
+        "opt1": "Johnny Cash",
+        "opt2": "Paul McCartney",
+        "opt3": "Mariah Carey",
+        "answer": "Paul McCartney"
+    },
+    {  
+        "qnum" :"3.",
+        "q": "Who was the first female singer to be inducted into the Rock and Roll Hall of Fame?",
+        "opt1": "Johnny Cash",
+        "opt2": "Aretha Franklin",
+        "opt3": "Mariah Carey",
+        "answer": "Aretha Franklin"
+    },
+    {
+        "qnum" :"4.",
+        "q": "Musician Peter Tork died on 21 February 2019. Which band was he a part of?",
+        "opt1": "Pearl Jam",
+        "opt2": "The Monkees",
+        "opt3": "Dio",
+        "answer": "The Monkees"
+    },
+    {
+        "qnum" :"5.",
+        "q": "Which mathematical symbol is not the name of an Ed Sheeran album?",
+        "opt1": "Plus",
+        "opt2": "Multiply",
+        "opt3": "Subtract",
+        "answer": "Subtract"
+    },
+    { 
+        "qnum" :"6.",
+        "q": "Complete the Mark Ronson song title: Uptown...",
+        "opt1": "Beat",
+        "opt2": "Funk",
+        "opt3": "Girl",
+        "answer": "Funk"
+    },
+    {
+        "qnum" :"7.",
+        "q": "Which Beatle performed a James Bond theme song?",
+        "opt1": "John Lennon",
+        "opt2": "Paul McCartney",
+        "opt3": "Ringo Starr",
+        "answer": "Paul McCartney"
+    },
+    {
+        "qnum" :"8.",
+        "q": "Which is the most popular genre of music in terms of number of radio stations?",
+        "opt1": "Hip-hop",
+        "opt2": "Country",
+        "opt3": "Rock",
+        "answer": "Country"
+    }
+]

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login V15</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <div class="nav" >
+              
+                <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:10px;"> Welcome {{username}}
+                         <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:650px;"> Quiz Generator
+                </p>
+             
+                <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
+                       <button id="btn" (click)= "logout()" style="font-family:Great vibes cursive;"> <b> LOGOUT </b> </button>
+                 
+                    </div> 
+            </div>
+
+      
+            <form >
+            <br><br>
+
+            <div class="roundback">
+                
+                <div class="cont">
+                <h2 style="color: rgb(7, 77, 23); font-style:italic;">Select your Quiz topic </h2>
+                
+                <select [(ngModel)]="topic" name=" " style="width: 200px; border-color:rgb(7,77, 23); border-width:1px; background-color: rgba(205, 230, 241, 0.3);">
+                <option *ngFor="let item of data" [value]="item.name "  > {{item.name | uppercase}}</option>
+                </select>
+                <br><br>
+                <button class="btn-btn-primary " (click)="loadQuiz(topic)"> Submit </button>
+
+                 </div>        
+        </div> 
+             </form>
+
+       
+</body>
+</html>
+
+
+

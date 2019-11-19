@@ -1,0 +1,58 @@
+[
+    {
+        "qnum" :"1.",
+        "q": "What is the NPM?",
+        "opt1": "Nuget Package Manager",
+    "opt2": "Package manager for the JavaScript programming language",
+        "opt3": "Package manager for Node.js",
+        "answer": "Nuget Package Manager"
+    },
+    {
+        "qnum" :"2.",
+    "q": "What is ‘callback’ in Node.js?",
+        "opt1": "ust an internal method in any NodeJs application",
+    "opt2": "Function used to deal with multiple requests made to the server",
+        "opt3": "An internal module in NodeJs",
+        "answer": "Function used to deal with multiple requests made to the server"
+    },
+    {
+        "qnum" :"3.",
+        "q": "How can you delete a file in Node using fs?",
+        "opt1": "fs.remove(path, callback)",
+    "opt2": "fs.unlink(path, callback)",
+        "opt3": "fs.delete(path, callback)",
+        "answer": "fs.unlink(path, callback)"
+    },
+    {
+        "qnum" :"4.",
+        "q": "Does nodejs run on windows?",
+        "opt1": "Yes, but only nodejs 12.6 and above",
+    "opt2": "Yes",
+        "opt3": "No",
+        "answer": "Yes"
+    },
+    {
+        "qnum" :"5.",
+        "q": "In order to fire events you can do:",
+        "opt1": "emitter.on(eventName, listener)",
+    "opt2": "emitter.listeners(eventName)",
+        "opt3": "emitter.emit(eventName[, ...args])",
+        "answer": "emitter.emit(eventName[, ...args])"
+    },
+    { 
+        "qnum" :"6.",
+        "q": "How to uninstall a dependency using npm?",
+        "opt1": "npm install -u dependency-name",
+    "opt2": "npm uninstall dependency-name",
+        "opt3": "npm unistall -d dependency-name",
+        "answer": "npm uninstall dependency-name"
+    },
+    {
+        "qnum" :"7.",
+        "q": "How can you remove a directory?",
+        "opt1": "fs.rmdir(path, callback)",
+    "opt2": "fs.deletedir(path, callback)",
+        "opt3": "fs.deldirectory(path, callback)",
+        "answer": "fs.rmdir(path, callback)"
+    }
+]

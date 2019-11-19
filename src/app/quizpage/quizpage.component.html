@@ -1,0 +1,99 @@
+<html>
+<head>
+<script src="./quizpage.component.ts"></script>
+<title>quiz</title>
+</head>
+
+<body>
+
+        <div class="nav" >
+                
+                  <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:10px; font-family:Great vibes cursive;"> Welcome {{username}}
+                           <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:650px; font-family:Great vibes cursive;"> Quiz Generator
+                  </p>
+               
+                  <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
+                         <button id="btn" (click)= "logout()" style="font-family:Great vibes cursive;"> <b> LOGOUT </b> </button>
+                   
+                      </div> 
+              </div>
+
+<!--
+        <div class="nav" >
+    
+                <div class="nav-header"  >            
+                  
+                <div class="nav-title"  >
+                <p style="color: white;  "> Welcome {{username}}</p> 
+                </div> 
+                <div style="font-size: 30px;  color: white; display: inline-block; position:fixed; left:50%;">
+                     Quiz Generator
+                </div> 
+                <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
+                       <button id="btn" (click)= "logout()"> <b> Logout </b> </button>
+                   </div> 
+                </div>
+            </div>-->
+<br /><br /><br />
+<div class="col-sm-12 text-center">
+<button class ="start" id ="start" (click)="start()" style="background-image: url(../../assets/images/back2.jpg); color:black;"><i>Click here to Start Quiz</i></button>
+</div>
+<br /><br /><br />
+<div  id="qp" >
+<!--<div id= "q1">Quiz</div> -->
+
+<table align="center" width="1000px" style=" text-align:center; background-repeat:no-repeat; background-size:cover; background-image: url(../../assets/images/i4.jpg); border-radius:5px;  border: 1px solid black;">
+    <tr>
+    <td><div id="qnum"></div></td>
+    <td align="left">
+    <div class="ques" id="q">
+    </div>
+</td>
+    </tr>
+    <tr>
+    <td><input type="radio" id="opt1" name="options"></td>
+    <td align="left"> <span id="optt1"></span> </td>
+    
+   </tr>
+   <tr>
+    <td><input type="radio" id="opt2" name="options"></td>
+    <td align="left"><span id="optt2"></span></td>
+    </tr>
+    <tr>
+            <td><input type="radio" id="opt3" name="options"> </td>
+            <td align="left"><span id="optt3" ></span> </td>
+    </tr>
+    <tr>
+       <td></td>
+    <td>
+    <button id="btn-next" (click)="checkAnswer()"> Next </button>
+    <button id="btn-submit" (click)="checkAnswer()">Submit </button>
+</td>
+    </tr>
+
+</table>
+
+
+
+<!--
+<div class="ques" id="q">
+    </div>
+    <div ><input type="radio" id="opt1" name="options">
+    <span id="optt1"></span>
+    </div>
+    <div><input type="radio" id="opt2" name="options">
+    <span id="optt2"></span>
+    </div>
+    <div><input type="radio" id="opt3" name="options">
+    <span id="optt3"></span>
+    
+    </div>-->
+
+
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+[
+    {
+        "qnum" :"1.",
+        "q": "Which Taylor Swift Album is Shake it Off on?",
+        "opt1": "1989",
+        "opt2": "Speak Now",
+        "opt3": "Taylor Swift",
+        "answer": "1989"
+    },
+    {
+        "qnum" :"2.",
+        "q": "Who is the composer of new Samajavaragamana song?",
+        "opt1": "S.S Taman",
+        "opt2": "Justin Bieber",
+        "opt3": "Shreya Goshal",
+        "answer": "S.S Taman"
+    },
+    {  
+        "qnum" :"3.",
+        "q": "How many members are there is BTS boy band?",
+        "opt1": "5",
+        "opt2": "7",
+        "opt3": "8",
+        "answer": "7"
+    },
+    {
+        "qnum" :"4.",
+        "q": "When did Michael Jackson die?",
+        "opt1": "June 30 2009",
+        "opt2": "August 25 2009",
+        "opt3": "June 25 2009",
+        "answer": "June 25 2009"
+    },
+    {
+        "qnum" :"5.",
+        "q": "Which mathematical symbol is not the name of an Ed Sheeran album?",
+        "opt1": "Plus",
+        "opt2": "Multiply",
+        "opt3": "Subtract",
+        "answer": "Subtract"
+    },
+    { 
+        "qnum" :"6.",
+        "q": "Complete the Mark Ronson song title: Uptown...",
+        "opt1": "Beat",
+        "opt2": "Funk",
+        "opt3": "Girl",
+        "answer": "Funk"
+    },
+    {
+        "qnum" :"7.",
+        "q": "Which Beatle performed a James Bond theme song?",
+        "opt1": "John Lennon",
+        "opt2": "Paul McCartney",
+        "opt3": "Ringo Starr",
+        "answer": "Paul McCartney"
+    },
+    {
+        "qnum" :"8.",
+        "q": "Debut song of Selena Gomez?",
+        "opt1": "Come and Get it",
+        "opt2": "Good for you",
+        "opt3": "Back to you",
+        "answer": "Come and get it"
+    },
+    {
+        "qnum" :"9.",
+        "q": "How many awards did BTS win in MTV EMA 2019?",
+        "opt1": "One",
+        "opt2": "Two",
+        "opt3": "Three",
+        "answer": "Three"
+    },
+    {
+        "qnum" :"10.",
+        "q": "Who was the original lead singer with the group The Wailers?",
+        "opt1": "Junior Braithwaite",
+        "opt2": "Dolly Parton",
+        "opt3": "Buddy Holly",
+        "answer": "Junior Braithwaite"
+    }
+]
