@@ -35,21 +35,17 @@ export class QuizpageComponent implements OnInit {
   correctCount:number = 0 ;
   incorrectCount:number = 0 ;
   index:number;
+  timeLimit1: number = 120;
+  timeLimit2: number = 60;
+  timeLimit3: number = 60;
+  
+  time:number= 120;
  
  
 constructor(private http: HttpClient, private router: Router, private service: TopicServiceService) {}
 
 
-public startTimer(){
-  
-     function timeIt(){
-       this.counter++;
-       
-     }
 
-     setInterval(timeIt,1000);
-
-  }
 
 
 public start(){
@@ -63,7 +59,7 @@ public start(){
       //this.data = JSON.stringify(data.json);
       this.data = data;
       this.generate(0);
-    // this.startTimer();
+      this.startTimer(this.timeLimit1);
     });
   }
   else if(this.option=='Music'){
@@ -75,7 +71,7 @@ public start(){
       //this.data = JSON.stringify(data.json);
       this.data = data;
       this.generate(0);
-     // this.startTimer();
+     this.startTimer(this.timeLimit2);
     });
   }
   else if(this.option=='Node.js'){
@@ -87,7 +83,7 @@ public start(){
       //this.data = JSON.stringify(data.json);
       this.data = data;
       this.generate(0);
-    //  this.startTimer();
+    this.startTimer(this.timeLimit3);
     });
   }
   else{
@@ -99,6 +95,24 @@ public start(){
   document.getElementById("start").style.visibility= "hidden";
   
 }
+
+public startTimer(timeLimit){
+  this.time = timeLimit;  
+  var interval = setInterval(() => {
+    this.time--;
+  
+  
+    if(this.time < 0 ){
+      //Handle the timeout
+      this.incorrectCount = (this.data.length-this.correctCount);      
+      this.service.changescore(this.correctCount,this.incorrectCount);
+      this.router.navigate(['/resultpage']);
+  
+      clearInterval(interval);
+      console.log('Ding!');
+    };
+  }, 1000);
+  }
 
  public generate(index:number) {
    
