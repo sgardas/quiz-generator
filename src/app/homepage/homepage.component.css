@@ -21,7 +21,7 @@ form{
 
   .roundback {
     text-align: center;
-    background-image: url("../../assets/images/back2.jpg");
+    background-image: url("../../assets/images/haha.jpg");
     height: 600px;
     width:800px;
     background-position: center center;
@@ -132,8 +132,8 @@ form{
   color:red;
   }
   .btn-btn-primary{
-  background-color:  rgb(7, 77, 23) ;
-  color: white;
+  background-color: rgb(252, 253, 252);;
+  color: #161515;
   padding: 5px 32px;
   text-decoration: none;
   margin: 4px 2px;
@@ -143,6 +143,7 @@ form{
   font-weight: bold;
   text-transform: none;
   border: 1px solid transparent;
+  border-radius:25px;
   }
   .btn-btn-primary span{
   cursor: pointer;
@@ -190,7 +191,7 @@ form{
     .nav {
       height: 50px;
       width: 100%;
-      background-color: #4d4d4d;
+      background-color: rgba(8, 5, 5, 0.2);
       position: relative;
     }
     

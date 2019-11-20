@@ -6,39 +6,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-        <div class="nav" >
+<body >
+        <div class="nav" style="background-image: url(./assets/images/haha.jpg);background-size: cover;">
               
                 <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:10px;"> Welcome {{username}}
                          <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:650px;"> Quiz Generator
                 </p>
              
                 <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
-                       <button id="btn" (click)= "logout()" style="font-family:Great vibes cursive;"> <b> LOGOUT </b> </button>
+                       <button id="btn" (click)= "logout()" style="border-radius:25px;  background-color: rgb(252, 253, 252);
+                       color: #161515;;  font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, sans-serif;
+                       font-size: 16px; border: 1px solid transparent;
+                       font-weight: bold; padding: 5px 32px;"> <b> LOGOUT </b> </button>
                  
                     </div> 
             </div>
-
+ 
+    
       
             <form >
             <br><br>
 
             <div class="roundback">
+                        <h2 style="color:white; font-style:italic;">{{message}}</h2>
                 
                 <div class="cont">
-                <h2 style="color: rgb(7, 77, 23); font-style:italic;">Select your Quiz topic </h2>
+
+                  
+                <h2 style="color:whitesmoke; ">Select your Quiz topic </h2>
                 
-                <select [(ngModel)]="topic" name=" " style="width: 200px; border-color:rgb(7,77, 23); border-width:1px; background-color: rgba(205, 230, 241, 0.3);">
-                <option *ngFor="let item of data" [value]="item.name "  > {{item.name | uppercase}}</option>
+                <select [(ngModel)]="topic" name=" " style="width: 200px; border-color:#ECF0ED; border-width:1px; background-color: rgba(245, 248, 250, 0.8);">
+                <option *ngFor="let item of data" [value]="item.name " style="font-style: bold;" ><b> {{item.name | uppercase}} </b></option>
                 </select>
                 <br><br>
+             <!--   <popup>U have selected {{option}} as Quiztopic.U want to continue ??</popup> -->
                 <button class="btn-btn-primary " (click)="loadQuiz(topic)"> Submit </button>
 
                  </div>        
         </div> 
              </form>
 
-       
+        
 </body>
 </html>
 

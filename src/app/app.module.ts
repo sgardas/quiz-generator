@@ -13,6 +13,7 @@ import { ResultpageComponent } from './resultpage/resultpage.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
+//import {PopupModule} from 'ng2-opd-popup';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModuleModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    //PopupModule.forRoot()
   ],
   providers: [
     

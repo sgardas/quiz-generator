@@ -1,7 +1,7 @@
 #start {
     text-align: center;
     visibility: visible;
-    background-color: #4CAF50 ; /* Green */
+     /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -22,64 +22,51 @@
     background-color: lightseagreen;
     }
     #q {
-      color: black;
+      color: white;
     margin-top: 30px;
     font-size: 30px;
     
     }
     #qnum {
-        color:black;
+        color:white;
         margin-top: 30px;
         font-size: 30px;
         
         }
-    #opt1 {
-      color: white;
-    margin: 0 10px 0 10px;
-    font-size: 30px;
-    
-    }
-    #opt2 {
-      color: white;
-    margin: 0 10px 0 10px;
-    font-size: 30px;
-    
-    }
-    #opt3 {
-      color: white;
-    margin: 0 10px 0 10px;
-    font-size: 30px;
-    
-    }
+
+   
+   
     #optt1 {
-      color: black;
+      color: white;
     font-size: 20px;
     
     }
     #optt2 {
-      color: black;
+      color: white;
     font-size: 20px;
     
     }
     #optt3 {
-      color: black;
+      color: white;
     font-size: 20px;
     
     }
     #btn-next {
-    margin-top: 50px;
-    width : 10%;
-    background-color: #4CAF50 ; /* Green */
-    color: white;
+    
+    background-color: white; ; /* Green */
+    color: black;
     font-size: 20px;
+    border-radius:25px;
+    width:110px;
     }
 
     #btn-submit {
-        margin-top: 50px;
-        width : 13%;
-        background-color: #4CAF50 ; /* Green */
-        color: white;
+      
+        background-color: white ; /* Green */
+        color: black;
         font-size: 20px;
+        border-radius: 25px;
+        width:110px
 
         }
 
@@ -102,7 +89,7 @@
           .nav {
             height: 50px;
             width: 100%;
-            background-color: #4d4d4d;
+            background-color: rgba(8, 5, 5, 0.85);
             position: relative;
           }
           

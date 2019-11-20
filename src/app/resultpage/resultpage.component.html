@@ -8,21 +8,23 @@
 
 </head>
 <body style="background-image: url(./assets/images/.jpg); background-size: cover;">
-    <div class="nav" >
+    <div class="nav" style="background-image: url(./assets/images/haha.jpg);background-size: cover;">
               
             <p style="color: rgb(14, 4, 4);  font-size: 30px; color: white;font-family:Great vibes cursive; display: inline-block;position:absolute; left:10px;"> Welcome {{username}}
                      <p style="color: rgb(29, 8, 8);  font-size: 30px; color: white;font-family:Great vibes cursive; display: inline-block;position:absolute; left:650px;"> Quiz Generator
             </p>
          
             <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
-                   <button id="btn" (click)= "logout()" style="font-family:Great vibes cursive; background-color:azure; color: rgb(7, 77, 1); "> <b> LOGOUT </b> </button>
-             
+                        <button id="btn" (click)= "logout()" style="border-radius:25px;  background-color: rgb(252, 253, 252);
+                        color: #161515;;  font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, sans-serif;
+                        font-size: 16px; border: 1px solid transparent;
+                        font-weight: bold; padding: 5px 32px;"> <b> LOGOUT </b> </button>
                 </div> 
         </div>
            <div class="container" >
             <form >
-                    <h1 style="color: rgb(7, 77, 1); font-family:Great vibes cursive;"><i>BELOW IS YOUR SCORE</i></h1>
-                    <h1 style="color: rgb(7, 77, 1); font-family:Great vibes cursive;">Correct: {{correct}}<br><br>Incorrect: {{incorrect}}</h1>
+                    <h1 style="color: rgb(252, 253, 252); ">BELOW IS YOUR SCORE</h1>
+                    <h1 style="color: rgb(252, 253, 252); font-family:Great vibes cursive;">Correct: {{correct}}<br><br>Incorrect: {{incorrect}}</h1>
                     <br><br>
            
           <button class="bt" (click)="retakeQuiz()"><b>Retake Quiz</b></button>

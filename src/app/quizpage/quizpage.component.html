@@ -6,15 +6,17 @@
 
 <body>
 
-        <div class="nav" >
+        <div class="nav" style="background-image: url(./assets/images/haha.jpg);background-size: cover;" >
                 
                   <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:10px; font-family:Great vibes cursive;"> Welcome {{username}}
                            <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:650px; font-family:Great vibes cursive;"> Quiz Generator
                   </p>
                
                   <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
-                         <button id="btn" (click)= "logout()" style="font-family:Great vibes cursive;"> <b> LOGOUT </b> </button>
-                   
+                        <button id="btn" (click)= "logout()" style="border-radius:25px;  background-color: rgb(252, 253, 252);
+                        color: #161515;;  font-family: Lucida Grande, Geneva, Verdana, Arial, Helvetica, sans-serif;
+                        font-size: 16px; border: 1px solid transparent;
+                        font-weight: bold; padding: 5px 32px;"> <b> LOGOUT </b> </button>
                       </div> 
               </div>
 
@@ -36,13 +38,13 @@
             </div>-->
 <br /><br /><br />
 <div class="col-sm-12 text-center">
-<button class ="start" id ="start" (click)="start()" style="background-image: url(../../assets/images/back2.jpg); color:black;"><i>Click here to Start Quiz</i></button>
+<button class ="start" id ="start" (click)="start()" style="background-image: url(../../assets/images/haha.jpg); color:white;"><b>Click here to Start Quiz</b></button>
 </div>
 <br /><br /><br />
 <div  id="qp" >
 <!--<div id= "q1">Quiz</div> -->
 
-<table align="center" width="1000px" style=" text-align:center; background-repeat:no-repeat; background-size:cover; background-image: url(../../assets/images/i4.jpg); border-radius:5px;  border: 1px solid black;">
+<table align="center" width="1000px" style=" text-align:center; background-repeat:no-repeat; background-size:cover; background-image: url(../../assets/images/haha.jpg); border-radius:5px;  border: 1px solid black;">
     <tr>
     <td><div id="qnum"></div></td>
     <td align="left">
@@ -66,11 +68,12 @@
     <tr>
        <td></td>
     <td>
-    <button id="btn-next" (click)="checkAnswer()"> Next </button>
-    <button id="btn-submit" (click)="checkAnswer()">Submit </button>
+    <button id="btn-next" (click)="checkAnswer()" style="background-color:white; color:black;"> Next </button>
+    <button id="btn-submit" (click)="checkAnswer()" style="background-color:white; color:black;">Submit </button>
 </td>
-    </tr>
 
+    </tr>
+        
 </table>
 
 

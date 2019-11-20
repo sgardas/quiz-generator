@@ -128,7 +128,7 @@ a {
   
   .limiter {
   width: 100%;
-  font-family: ;
+  
   margin: 0 auto;
   }
   
@@ -145,7 +145,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #ebeeef ;
+  background: white;
   }
   
   .wrap-login100 {
@@ -161,7 +161,7 @@ a {
   .login100-form-title {
   width: 100%;
   position: relative;
-  z-index: 1;
+  
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -486,7 +486,7 @@ a {
   .nav {
     height: 50px;
     width: 100%;
-    background-color: rgb(27, 8, 8);
+    background-color: rgba(8, 5, 5, 0.2);
     position: relative;
   }
   

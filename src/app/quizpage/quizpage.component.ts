@@ -63,7 +63,7 @@ public start(){
       //this.data = JSON.stringify(data.json);
       this.data = data;
       this.generate(0);
-     this.startTimer();
+    // this.startTimer();
     });
   }
   else if(this.option=='Music'){
