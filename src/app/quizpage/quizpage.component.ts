@@ -20,7 +20,7 @@ export class QuizpageComponent implements OnInit {
   url='http://localhost:8081/quiz/'; //PORT 8081
   timeLeft: number = 60;
   counter:number=0;
-  intervalTime: any;
+  intervalTime: any;  
 
   ngOnInit(): void {
     this.service.optionObservable.subscribe(update =>this.option = update);
@@ -42,6 +42,7 @@ export class QuizpageComponent implements OnInit {
   
   time:number= 60;
   timeMax:number= 120;
+ 
  
 constructor(private http: HttpClient, private router: Router, private service: TopicServiceService) {}
 
@@ -102,15 +103,19 @@ public startTimer(timeLimit){
   this.intervalTime = setInterval(() => {
     this.time--;
   
+  
     if(this.time < 0 ){
       //Handle the timeout
       this.incorrectCount = (this.data.length-this.correctCount);      
       this.service.changescore(this.correctCount,this.incorrectCount);
-       this.time = 99;
+      this.time = 99;
+      
+      
       console.log('Ding!');
       this.router.navigate(['/resultpage']);
     };
   }, 1000);
+  
   }
 
  public generate(index:number) {
@@ -186,6 +191,5 @@ logout(){
   clearInterval(this.intervalTime);
   this.router.navigate(['/login']);
   }
-  
+  }
 
-}
