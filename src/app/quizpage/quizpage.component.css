@@ -1,3 +1,5 @@
+
+
 #start {
     text-align: center;
     visibility: visible;
@@ -11,6 +13,18 @@
     font-size: 26px;
     line-height: 50px;
     width:50%;
+    background-color: rgb(28, 43, 43);
+    transition-duration: 0.4s;
+    }
+
+    #start:hover{
+
+      background-color: rgb(134, 76, 76);
+      color: rgb(8, 8, 8);
+      padding-right: 60px;
+      padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
     }
     #qp {
     text-align: center;
@@ -173,6 +187,8 @@
               height: calc(100vh - 50px);
               overflow-y: auto;
             }
+
+            
           }
           
           

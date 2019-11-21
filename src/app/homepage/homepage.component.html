@@ -9,8 +9,8 @@
 <body >
         <div class="nav" style="background-image: url(./assets/images/haha.jpg);background-size: cover;">
               
-                <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:10px;"> Welcome {{username}}
-                         <p style="color: white;  font-size: 30px; color: white; display: inline-block;position:absolute; left:650px;"> Quiz Generator
+                <p style="color: white;  font-size: 30px; font-family:Great vibes cursive; color: white; display: inline-block;position:absolute; left:10px;"> Welcome {{username}}
+                         <p style="color: white;  font-size: 30px; font-family:Great vibes cursive; color: white; display: inline-block;position:absolute; left:650px;"> Quiz Generator
                 </p>
              
                 <div style="font-size: 30px; color: white; display: inline-block;position:absolute; right:10px;">
@@ -21,26 +21,25 @@
                  
                     </div> 
             </div>
- 
-    
-      
+            
+
             <form >
             <br><br>
 
             <div class="roundback">
-                        <h2 style="color:white; ">{{message}}</h2>
+                        <h2 style="color:white; font-family:Great vibes cursive;  ">{{message}}</h2>
                 
                 <div class="cont">
 
                   
-                <h2 style="color:whitesmoke; ">Select your Quiz topic </h2>
+                <h2 style="color:whitesmoke; font-family:Great vibes cursive; ">Select your Quiz topic </h2>
                 
                 <select [(ngModel)]="topic" name=" " style="width: 200px; border-color:#ECF0ED; border-width:1px; background-color: rgba(245, 248, 250, 0.8);">
                 <option *ngFor="let item of data" [value]="item.name " style="font-style: bold;" ><b> {{item.name | uppercase}} </b></option>
                 </select>
                 <br><br>
              <!--   <popup>U have selected {{option}} as Quiztopic.U want to continue ??</popup> -->
-                <button class="btn-btn-primary " (click)="loadQuiz(topic)"> Submit </button>
+                <button class="btn-btn-primary " style="font-family:Great vibes cursive; font-size:22px;" (click)="loadQuiz(topic)"> Submit </button>
 
                  </div>        
         </div> 
