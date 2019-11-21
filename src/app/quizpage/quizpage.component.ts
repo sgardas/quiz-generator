@@ -36,12 +36,12 @@ export class QuizpageComponent implements OnInit {
   correctCount:number = 0 ;
   incorrectCount:number = 0 ;
   index:number;
-  timeLimit1: number = 20;
-  timeLimit2: number = 20;
-  timeLimit3: number = 20;
+  timeLimit1: number = 60;
+  timeLimit2: number = 60;
+  timeLimit3: number = 60;
   
-  time:number= 20;
-  timeMax:number= 20;
+  time:number= 60;
+  timeMax:number= 120;
  
 constructor(private http: HttpClient, private router: Router, private service: TopicServiceService) {}
 
