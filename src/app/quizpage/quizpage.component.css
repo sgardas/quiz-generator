@@ -14,13 +14,14 @@
     line-height: 50px;
     width:50%;
     background-color: rgb(28, 43, 43);
-    transition-duration: 0.4s;
+    transition-duration: 0.01s;
     }
 
     #start:hover{
 
-      background-color: rgb(134, 76, 76);
-      color: rgb(8, 8, 8);
+      background-image: url(../../assets/images/haha.jpg);
+     /* background-color: rgb(190, 127, 127);*/
+      color: white;
       padding-right: 60px;
       padding-top: 60px;
   padding-left: 60px;

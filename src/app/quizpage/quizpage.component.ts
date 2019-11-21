@@ -36,7 +36,7 @@ export class QuizpageComponent implements OnInit {
   correctCount:number = 0 ;
   incorrectCount:number = 0 ;
   index:number;
-  timeLimit1: number = 60;
+  timeLimit1: number =60;
   timeLimit2: number = 60;
   timeLimit3: number = 60;
   
@@ -103,16 +103,22 @@ public startTimer(timeLimit){
   this.intervalTime = setInterval(() => {
     this.time--;
   
-  
-    if(this.time < 0 ){
+  console.log(this.router.url+"%$#@");
+    if(this.time == 0 ){
       //Handle the timeout
       this.incorrectCount = (this.data.length-this.correctCount);      
       this.service.changescore(this.correctCount,this.incorrectCount);
-      this.time = 99;
+     // this.time = 99;
+     this.router.navigate(['/resultpage']);
+      if(this.router.url=='/login'){
+        this.router.navigate(['/login']);
+      }
+      if(this.router.url=='/homepage'){
+        this.router.navigate(['/homepage']);
+      }
       
+     console.log('Ding!');
       
-      console.log('Ding!');
-      this.router.navigate(['/resultpage']);
     };
   }, 1000);
   
