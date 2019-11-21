@@ -35,11 +35,11 @@ export class QuizpageComponent implements OnInit {
   correctCount:number = 0 ;
   incorrectCount:number = 0 ;
   index:number;
-  timeLimit1: number = 120;
+  timeLimit1: number = 60;
   timeLimit2: number = 60;
   timeLimit3: number = 60;
   
-  time:number= 120;
+  time:number= 60;
  
  
 constructor(private http: HttpClient, private router: Router, private service: TopicServiceService) {}
