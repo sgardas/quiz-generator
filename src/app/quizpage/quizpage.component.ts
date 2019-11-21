@@ -20,6 +20,7 @@ export class QuizpageComponent implements OnInit {
   url='http://localhost:8081/quiz/'; //PORT 8081
   timeLeft: number = 60;
   counter:number=0;
+  intervalTime: any;
 
   ngOnInit(): void {
     this.service.optionObservable.subscribe(update =>this.option = update);
@@ -35,12 +36,12 @@ export class QuizpageComponent implements OnInit {
   correctCount:number = 0 ;
   incorrectCount:number = 0 ;
   index:number;
-  timeLimit1: number = 120;
-  timeLimit2: number = 60;
-  timeLimit3: number = 60;
+  timeLimit1: number = 20;
+  timeLimit2: number = 20;
+  timeLimit3: number = 20;
   
-  time:number= 120;
- 
+  time:number= 20;
+  timeMax:number= 20;
  
 constructor(private http: HttpClient, private router: Router, private service: TopicServiceService) {}
 
@@ -98,18 +99,16 @@ public start(){
 
 public startTimer(timeLimit){
   this.time = timeLimit;  
-  var interval = setInterval(() => {
+  this.intervalTime = setInterval(() => {
     this.time--;
-  
   
     if(this.time < 0 ){
       //Handle the timeout
       this.incorrectCount = (this.data.length-this.correctCount);      
       this.service.changescore(this.correctCount,this.incorrectCount);
-      this.router.navigate(['/resultpage']);
-  
-      clearInterval(interval);
+       this.time = 99;
       console.log('Ding!');
+      this.router.navigate(['/resultpage']);
     };
   }, 1000);
   }
@@ -183,7 +182,10 @@ public checkAnswer() {
 
 
 logout(){
+  if(this.intervalTime)
+  clearInterval(this.intervalTime);
   this.router.navigate(['/login']);
   }
+  
 
 }
