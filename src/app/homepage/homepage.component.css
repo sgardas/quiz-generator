@@ -131,7 +131,7 @@ form{
   color:red;
   }
   .btn-btn-primary{
-  background-color: rgb(252, 253, 252);;
+  background-color: rgb(252, 252, 252);
   color: #161515;
   padding: 5px 32px;
   text-decoration: none;
@@ -143,6 +143,7 @@ form{
   text-transform: none;
   border: 1px solid transparent;
   border-radius:25px;
+  transition-duration: 0.4s;
   }
   .btn-btn-primary span{
   cursor: pointer;
@@ -160,8 +161,10 @@ form{
   transition: 0.5s;
   }
   
-  .btn-btn-primary:hover span {
-  padding-right: 25px;
+  .btn-btn-primary:hover  {
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #cf6b6b;
   }
   
   .btn-btn-primary:hover span:after {
@@ -179,6 +182,8 @@ form{
       margin: 0px;
       font-family: 'segoe ui';
     }
+
+    
   
     #btn {
       
